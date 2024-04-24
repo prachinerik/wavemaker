@@ -111,7 +111,7 @@ In the command line go to the folder where the project has been downloaded and r
 2. npm run build
 3. npm run dev
 
-Here is the link for the Front end repo: https://github.com/prachinerik/WavemakerFrontEnd
+Here is the link for the Front end repository: https://github.com/prachinerik/WavemakerFrontEnd
 
 ## Step5: Run the front end
 In the command line go to the folder where the project has been downloaded and run following commands:
