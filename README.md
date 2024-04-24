@@ -33,6 +33,7 @@ mysql>.
     		`password` varchar(255),
 		UNIQUE(email)
 		);
+  
 
 		CREATE TABLE `options` (
    		`options_id` INT NOT NULL AUTO_INCREMENT,
@@ -41,6 +42,7 @@ mysql>.
     		`option_weight` INT NOT NULL,
 		UNIQUE(options)
 		);
+  
 
 		INSERT INTO options (options_id, options, option_weight)
 		VALUES (1, 'Longterm Unemployment', 30),
@@ -51,6 +53,7 @@ mysql>.
  		(6, 'Burnout', 80),
  		(7, 'Stress', 80),
  		(8, 'Unexpected Unemployment', 80);
+   
 
 		CREATE TABLE `programs` (
    		`program_id` INT NOT NULL AUTO_INCREMENT,
@@ -58,6 +61,7 @@ mysql>.
    		`programs_name` varchar(50),
 	   	UNIQUE(programs_name)
 		);
+  
 
 		INSERT INTO programs (program_id, programs_name)
 		VALUES (1, 'Program A'),
@@ -67,7 +71,6 @@ mysql>.
  		(5, 'Program E');
 
 
-
 		CREATE TABLE `selected_options` (
    		`user_id` INT,
    		`options_id` INT,
@@ -75,6 +78,7 @@ mysql>.
     		FOREIGN KEY (options_id) REFERENCES options(options_id),
    		 FOREIGN KEY (user_id) REFERENCES users(user_id)
 		);
+  
 
 		CREATE TABLE `suitable_programs` (
    		`program_id` INT,
@@ -83,6 +87,7 @@ mysql>.
     		FOREIGN KEY (options_id) REFERENCES options(options_id),
    		 FOREIGN KEY (program_id) REFERENCES programs(program_id)
 		);
+
 
 		INSERT INTO suitable_programs (program_id, options_id) VALUES (1, 3),
  		(1, 4),
@@ -98,6 +103,7 @@ mysql>.
 		(5, 4),
 		(5, 8),
 		(5, 3);
+
  
 ## Step4: Run the backend Project project
 In the command line go to the folder where the project has been downloaded and run following commands:
