@@ -108,8 +108,7 @@ Here is the link for the Front end repo: https://github.com/prachinerik/Wavemake
 #Step5: Run the front end
 In the command line go to the folder where the project has been downloaded and run following commands:
 1)npm install
-2)npm run build
-3)npm run dev
+2)npm run dev
 
 #Step6: To access the Front end
 http://localhost:5173/login
