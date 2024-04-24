@@ -107,16 +107,16 @@ mysql>.
  
 ## Step4: Run the backend Project project
 In the command line go to the folder where the project has been downloaded and run following commands:
-1)npm install
-2)npm run build
-3)npm run dev
+1. npm install
+2. npm run build
+3. npm run dev
 
 Here is the link for the Front end repo: https://github.com/prachinerik/WavemakerFrontEnd
 
 ## Step5: Run the front end
 In the command line go to the folder where the project has been downloaded and run following commands:
-1)npm install
-2)npm run dev
+1. npm install
+2. npm run dev
 
 ## Step6: To access the Front end
 http://localhost:5173/login
