@@ -7,11 +7,13 @@ User Onboarding App Node, Express with Typescript and MySQL Database.
 #Step2 : Set up MySQL container in Docker
 
 //To create a MySQL instance on Docker
-docker pull mysql:latest
+
+$ docker pull mysql:latest
 $ docker run --name container_name -p 33061:3307 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest
 
 //To connect to docker MySQL through command line
-docker exec -it container_name bash
+
+$ docker exec -it container_name bash
 mysql -u root -p
 Enter password: ...
 mysql>
